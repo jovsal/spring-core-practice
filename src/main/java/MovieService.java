@@ -11,13 +11,6 @@ public class MovieService {
     @Autowired
     public MovieRepository movieRepository;
 
-    public void readMovie(){
-        movieRepository.read();
-    }
-    public void writeMovie(){
-        movieRepository.write();
-    }
-
     public List<Movie> getAllMovies() throws IOException {
         List<Movie> movies = new ArrayList<Movie>();
         List<String> moviesRaw =  movieRepository.readAll();

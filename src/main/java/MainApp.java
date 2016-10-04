@@ -1,13 +1,9 @@
-import org.omg.CORBA.portable.InputStream;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
 
 import java.io.*;
 import java.util.Scanner;
 
-
-//@ComponentScan
 public class MainApp {
 
     public static void main(String[] args) throws IOException {

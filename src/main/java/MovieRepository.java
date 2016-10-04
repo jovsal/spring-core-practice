@@ -1,11 +1,6 @@
-import org.omg.CORBA.Environment;
-import org.omg.CORBA.portable.InputStream;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
-import java.nio.charset.Charset;
 import java.util.*;
 
 @Component
@@ -13,14 +8,6 @@ public class MovieRepository {
 
 //    @Value("${fileLocation}")
 //    private String filePath;
-
-    public void read(){
-        System.out.println("read movie");
-    }
-
-    public void write(){
-        System.out.println("write movie");
-    }
 
     public List<String> readAll() throws IOException {
 
